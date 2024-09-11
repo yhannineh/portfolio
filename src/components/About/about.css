@@ -1,0 +1,44 @@
+.aboutMe{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMeTitle {
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.aboutMePara {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.skillsList{
+    max-width: 70vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.iconName {
+    padding-left: .3rem;
+    display: inline-block;
+}
