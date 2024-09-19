@@ -1,8 +1,10 @@
 import Navbar from "./components/navbar/navbar";
 import Intro from "./components/Intro/intro";
 import About from "./components/About/about";
-import Projects from "./components/Projects/projects"
-import Contact from "./components/Contact/contact"
+import Projects from "./components/Projects/projects";
+import Contact from "./components/Contact/contact";
+import Footer from "./components/Footer/footer";
+
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
       <About/>
       <Projects/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }

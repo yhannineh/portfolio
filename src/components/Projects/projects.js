@@ -37,7 +37,7 @@ const ProjectItem = ({ project }) => {
 
 const Projects = () => {
     return (
-        <div className="projectsSection">
+        <div id="projectsSection">
             <span className="projectTitle">My Projects</span>
             <p className="projectPara">Below are a few of the projects I have completed over the course of my career. <br/>Click on a project to learn more.</p>
             <div className="projectCards">

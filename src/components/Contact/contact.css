@@ -46,14 +46,13 @@
     background: white;
     border: none;
     padding: 0.75rem 3.5rem;
-    margin:1rem;
     border-radius: 0.5rem;
+    margin-top: 1rem;
 }
 
 .links {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
 }
 
 .link {
