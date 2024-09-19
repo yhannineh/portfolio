@@ -27,6 +27,7 @@ const projectData = [
         technologies: ["React", "Redux", "Node.js"],
         url: "http://examplestore.com"
     },
+    
     // More projects can be added here
 ];
 
