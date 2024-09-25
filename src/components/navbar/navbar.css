@@ -1,34 +1,59 @@
 .navbar {
     height: 4rem;
     width: 100vw;
-
     position: sticky;
     top: 0;
     z-index: 3;
-    background: rgb(30, 30, 30);
+    background: #142F43;
 }
 
 .navbarContent {
     max-width: 75rem;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
+    color: #E0E0E0;
+    font-size: large;
 }
-.logo {
-    object-fit: cover;
-    height: 3rem;
-    width: 4rem;
-}
+/* .logo {
+    object-fit:contain;
+    height: 6vh;
+    width: auto;
+    max-height: 3rem;
+} */
 
 .desktopMenuListItem {
-    margin: 1rem;
+    margin: 0 1.3rem;
+}
+
+h2 {
+    font-family: 'Fira Code', monospace;
+    cursor:default;
+    color: #64B5F6;
+}
+
+.desktopMenu .desktopMenuListItem:hover{
+    color: #64B5F6;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #64B5F6;
+    cursor: pointer;
+}
+.contact .desktopMenuListItem:hover{
+    color: #64B5F6;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #64B5F6;
     cursor: pointer;
 }
 
-.desktopMenuListItem:hover {
-    color: yellow;
-    padding-bottom: .5rem;
-    border-bottom: 2px solid yellow;
+@media screen and (max-width:480px) {
+    .desktopMenuListItem{
+        font-size: small;
+        margin: .5rem;
+    }
+    .logo {
+        left: 1rem;
+    }
 }

@@ -1,34 +1,42 @@
+import golden from '../../assets/golden.webp';
+import aichat from '../../assets/aichat.webp';
+import fruitStand from '../../assets/fruitStand.webp';
+import portfolio from '../../assets/portfolio.webp';
+
 const projectData = [
     {
         id: 1,
-        name: "Personal Portfolio Website",
-        description: "A responsive portfolio website built using React and styled-components.",
-        technologies: ["React", "styled-components", "CSS"],
+        name: "Personal Website",
+        icon: portfolio,
+        description: "Developed a responsive portfolio website using React, featuring dynamic project cards that expand to reveal detailed information about each project. The site also includes a contact form integrated with EmailJS for easy communication.",
+        technologies: ["React", "EmailJS", "CSS", "HTML", "JavaScript", "Git"],
         url: "http://example.com"
     },
     {
         id: 2,
-        name: "E-commerce Store",
-        description: "An e-commerce store designed to sell digital goods online.",
-        technologies: ["React", "Redux", "Node.js"],
-        url: "http://examplestore.com"
+        name: "Pizzeria Website",
+        icon: golden,
+        description: "Developed a responsive pizza website with Next.js, integrating the Mailchimp API for newsletter sign-ups. Enhanced user insights and compliance by implementing Google Analytics and a cookie consent popup. Applied Playwright for end-to-end testing and used Agile principles to streamline development.",
+        technologies: ["Next.js(React-based framework)", "Node.js", "HTML", "CSS", "JavaScript", "Mailchimp API", "GoogleAnalytics", "Playwright", "Git", "Agile"],
+        url: "https://is-218001-final.vercel.app/"
     },
     {
         id: 3,
-        name: "Interactive Data Visualization",
-        description: "A web application for visualizing data interactively using D3.js.",
-        technologies: ["D3.js", "React", "CSS"],
-        url: "http://datavizexample.com"
+        name: "CosmoChat-AI",
+        icon: aichat,
+        description: "Developed a React application integrating Chart.js and a chat interface using @chatscope/chat-ui-kit-react. The app features real-time message handling and displays a bar chart tracking the number of user messages. The application communicates with OpenAI's API to generate responses.",
+        technologies: ["React", "Chart.js", "JavaScript", "CSS", "HTML", "OpenAI API", "Chat UI Kit"],
+        url: "https://github.com/yhannineh/cosmochat-ui"
     },
     {
         id: 4,
-        name: "E-commerce Store",
-        description: "An e-commerce store designed to sell digital goods online.",
-        technologies: ["React", "Redux", "Node.js"],
-        url: "http://examplestore.com"
+        name: "Fruit Stand",
+        icon: fruitStand,
+        description: "Built a fruit stand website using PHP, SQL, HTML, CSS, and JavaScript. The site features user authentication, allowing logged-in users to manage fruit listings. Also developed a tool for generating shipping labels to streamline the process.",
+        technologies: ["PHP", "SQL", "HTML", "CSS", "JavaScript"],
+        url: null
     },
     
-    // More projects can be added here
 ];
 
 export default projectData;

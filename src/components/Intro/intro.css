@@ -1,16 +1,195 @@
+.color{
+    background: linear-gradient(to bottom, #27496D, #1B3B58);
+}
 #intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75vw;
+    overflow: hidden;   
+    display: flex; 
+}
+.introContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bg {
+    position: absolute;
+    right: 5rem;
+    bottom: 0;
+    width: 43rem;
+    z-index: 0;
+}
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    color:#E0E0E0;
+    margin-left: 5rem;
+}
+
+.hello {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: #64B5F6;
+}
+
+.introPara {
+    font-size: large;
+    font-weight: 300;
+}
+
+.introBtn{
+    background: #3A6073;
+    color:white;
+    margin: .8rem 0;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: large;
+}
+.introBtn:hover {
+    background: #486A7A; 
+}
+@media screen and (max-width:1600px) {
+    .bg{
+        width:37rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .hello {
+        font-size: 2.1rem;
+    }
+    .introContent {
+        font-size: 3rem;
+    }
+    .introPara {
+        font-size: medium;
+    }
+    
+    .introBtn{
+        margin: .8rem 0;
+        padding: .8rem 2.2rem;
+        font-size: medium;
+    }
+}
+@media screen and (max-width:1000px) {
+    .bg{
+        right:0rem;
+    }
+    .introContent{
+        margin-left: 1.8rem;
+    }
+}
+@media screen and (max-width:850px) {
+    .bg{
+        right:-2rem;
+    }
+    .introContent{
+        margin-left: .3rem;
+    }
+}
+@media screen and (max-width:700px) {
+    .bg {
+        width: 30rem;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    #intro {
+        margin:0 auto;
+    }
+    .introContent{
+       justify-content: flex-start;
+       align-items: center;
+       text-align: center;
+       font-size: 2.5rem;
+       margin: 0 auto;
+    }
+    .hello {
+        font-size: 1.8rem;
+    }
+    .introPara {
+        font-size: medium;
+    }
+    .introBtn {
+        font-size: medium;
+        padding: .7rem 2rem;
+    }
+}
+
+@media screen and (max-width:585px) {
+    .hello {
+        font-size: 1.6rem;
+    }
+    .introPara {
+        font-size: medium;
+    }
+    .introBtn {
+        font-size: medium;
+        padding: .7rem 2rem;
+    }
+    .introContent{
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+       
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #intro {
     height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75vw;
     margin: 0 0 0 6rem;
     overflow: hidden;
+    
+    
 }
 
 .bg {
     position: absolute;
     top: 0rem;
     right: 5rem;
-    z-index: -1;
+    z-index: 0;
     object-fit: cover;
     height: 100vh;
 }
@@ -25,6 +204,8 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    z-index: 5;
+    position: relative;
 }
 
 .hello {
@@ -47,21 +228,88 @@
     padding: 0.75rem 2rem;
     border: none;
     border-radius: 2rem;
+    cursor: pointer;
 }
 
 @media screen and (max-width:840px) {
+    #intro{
+        margin-left: 2rem;
+    }
     .bg {
-        right: -10vw;
+        right: -3vw;
     }
     .introContent {
         font-size: 2rem;
+        width: 70vw;
     }
     .hello {
         font-size: 1.3rem;
     }
+    .introBtn{
+        margin-top: .75rem;
+        padding: 0.55rem 1.5rem;
+    }
+}
+@media screen and (max-width:525px) {
+    #intro{
+        margin-left: 1rem;
+    }
+    .introContent {
+        font-size: 1.5rem;
+        width: 70vw;
+    }
+    .hello {
+        font-size: 1.3rem;
+    }
+    .introPara {
+        font-size: small;
+    }
+    .introBtn{
+        padding: 0.46rem 1.1rem;
+        margin-top: .45rem;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    #intro{
+        margin-left: .6rem;
+    }
+    .introContent {
+        font-size: 1.3rem;
+        width: 80vw;
+    }
+    .hello {
+        font-size: 1.1rem;
+    }
+    .bg {
+        right: -10vw;
+    }
+}
+@media screen and (max-width:480px) {
+    #intro{
+        margin-left: .6rem;
+    }
+    .introContent {
+        font-size: 1.3rem;
+        width: 80vw;
+    }
+    .hello {
+        font-size: 1.1rem;
+    }
+    .bg {
+        right: -10vw;
+    }
 }
 @media screen and (max-width:400px) {
+    #intro{
+        margin-left: .1rem;
+    }
     .bg {
         right: -20vw;
     }
 }
+@media screen and (max-width:380px) {
+    .bg {
+        right: -27vw;
+    }
+} */

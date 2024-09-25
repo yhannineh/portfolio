@@ -1,25 +1,98 @@
+.color {
+    background: linear-gradient(to bottom right, #1B3B58, #142F43);
+}
 #aboutMe{
-    height: 100vh;
+    min-height: calc(100vh - 4rem);
     max-height: fit-content;
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 7% 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .aboutMeTitle {
-    padding: 1rem;
+    padding: 0rem;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.aboutMePara {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.skillsList{
+    max-width: 70vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.iconName {
+    padding-left: .3rem;
+    display: inline-block;
+}
+@media (max-width: 480px) {
+    #aboutMe {
+        padding: 4rem .5rem;
+    }
+    .aboutMeTitle {
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    .aboutMePara {
+        padding: .5rem;
+    }
+    .skillsList{
+        max-width: 90vw;
+    }
+}
+
+
+
+/*
+#aboutMe{
+    min-height: calc(100vh - 4rem);
+    max-height: fit-content;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 7% 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.aboutMeTitle {
+    padding: 0rem;
     font-size: 3rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .aboutMePara {
     text-align: center;
     padding: 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
@@ -43,3 +116,18 @@
     padding-left: .3rem;
     display: inline-block;
 }
+@media (max-width: 480px) {
+    #aboutMe {
+        padding: 4rem .5rem;
+    }
+    .aboutMeTitle {
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    .aboutMePara {
+        padding: .5rem;
+    }
+    .skillsList{
+        max-width: 90vw;
+    }
+} */

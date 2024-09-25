@@ -1,27 +1,46 @@
+.color{
+    background: linear-gradient(to right, #142F43, #0E2431);
+}
 #projectsSection {
     width: 100vw;
     max-width: 75rem;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin: 0 auto 2rem;
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    padding: 7% 0;
 }
 
 .projectItem {
-    color: black;
+    color: #E0E0E0;
     display: flex;
     align-items: center;
-    background-color: gray;
+    background: linear-gradient(to bottom, #1B3B58, #142F43);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     opacity: 1;
     margin: 1rem;
-    width: 100%;
-    max-width: 30rem;
+    width: 32rem;
+    padding: .7rem;
     overflow: hidden;
+    box-sizing: border-box;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
+/* .projectItem:hover {
+    background: linear-gradient(to bottom, #2C4F6B, #1F3A52);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-4px); 
+
+} */
 
 .projectImage {
     width: 5rem;
-    padding: 1rem;
+    padding: .5rem;
+    margin-right: 1rem;
 }
 
 .projectItemDetails {
@@ -39,15 +58,41 @@
     left: 0;
     width: 100%; 
     height: 100%; 
-    background-color: grey; 
+    background: linear-gradient(to bottom, #203A43, #1C3B4D);
+    color: #E0E0E0;
     z-index: 1; 
     transform: scale(1); 
     opacity: 1;
     cursor: default;
-    border-radius: 10px; 
-    padding: 2rem; 
+    border-radius: 8px; 
+    padding: 1rem 2rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
-
+.expandedName{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #E0F7FA;
+    margin-bottom: 1%;
+}
+.expandedDesc {
+    font-size: 1rem;
+    color: #B0BEC5;
+    margin-bottom: 2%;
+}
+.expandedTechUsed {
+    font-size: 1rem;
+    color: #80CBC4;
+    font-style: italic;
+    margin-bottom: 1%;
+}
+.expandedLink{
+    font-size: 1rem;
+    color: #64B5F6;
+    text-decoration: underline;
+}
 .collapsed {
     transform: scale(0);
     opacity: 0;
@@ -67,32 +112,61 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-style: italic;
-    font-size: 0.90rem;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem;
+    background-color: #2C5364;
+    color: #FFFFFF;
     border: none;
-    position: absolute;
+    border-radius: 4px;
     cursor: pointer;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.collapseButton:hover {
+    background-color: #203A43;
 }
 
 .projectTitle {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
+    text-align: center;
+    margin: 0 auto; 
+    width: 100%; 
 }
 
 .projectPara {
     text-align: center;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
 
 
 
+@media (max-width: 768px) {
+    .projectItem {
+        width: 80%; 
+    }
+}
 
+@media (max-width: 480px) {
+    #projectsSection{
+        padding: 6rem 0;
+    }
+    .projectItem {
+        width: 95%; 
+    }
+
+    .projectTitle {
+        font-size: 2rem;
+    }
+
+    .collapseButton {
+        font-size: 0.75rem;
+    }
+}
 
 
 
