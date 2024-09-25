@@ -145,6 +145,30 @@
     }
        
 }
+@media screen and (max-width:400px) {
+    .hello {
+        font-size: 1.2rem;
+    }
+    .introPara {
+        font-size: small;
+    }
+    .introBtn {
+        font-size: small;
+        padding: .5rem 1.7rem;
+    }
+    .introContent{
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+    .bg {
+        margin: 0 auto;
+        padding: 0;
+        width: 30rem;
+        right: 55%;
+        bottom: 0;
+        transform: translateX(50%);
+    }
+}
 
 
 
