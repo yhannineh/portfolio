@@ -5,14 +5,11 @@
     text-decoration: none;
     background: transparent;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
 
 body {
-    /* background: rgb(30, 30, 30); */
     background: linear-gradient(to bottom, #27496D, #1B3B58, #142F43, #0E2431, #081820);
     color: white;
     overflow: hidden;
     overflow-y: scroll;
-    overflow-x: hidden;
 }
